@@ -54,7 +54,7 @@ student-task-manager/
 Replace `YOUR_USERNAME` with your GitHub username.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-task-manager.git
+git clone https://github.com/ManteshB2006/student-task-manager.git
 ```
 
 **2. Open the project folder**
