@@ -1,33 +1,33 @@
 # Student Task Manager
 
-A responsive, beginner-friendly web application that helps students organize academic tasks, track their progress, and manage their daily study activities.
+A responsive web application that helps students organize academic tasks, track their progress, and manage their daily study activities.
 
 ## About the Project
 
-Student Task Manager is a front-end web development project built using HTML, CSS, and vanilla JavaScript. It provides a simple interface for creating tasks, tracking completion, filtering tasks, and saving data in the browser.
+Student Task Manager is a front-end web application built using HTML5, CSS3, and vanilla JavaScript. It allows students to create tasks, track completion, filter tasks by status, and save their tasks in the browser.
 
-The project is designed to practice core web development concepts, including DOM manipulation, event handling, responsive design, and browser storage.
+This project demonstrates practical web development concepts, including DOM manipulation, event handling, responsive design, and browser storage.
 
 ## Features
 
-- **Add Tasks:** Create tasks for study sessions and academic activities.
+- **Add Tasks:** Create tasks for studying and academic activities.
 - **Complete Tasks:** Mark tasks as completed or pending.
 - **Delete Tasks:** Remove tasks that are no longer needed.
 - **Filter Tasks:** View all tasks, pending tasks, or completed tasks.
 - **Task Statistics:** View total, pending, and completed task counts.
-- **Persistent Storage:** Save tasks using browser LocalStorage.
-- **Responsive Design:** Use the application on mobile devices, tablets, and desktops.
-- **Clear Completed Tasks:** Remove completed tasks when they are no longer needed.
+- **Local Data Storage:** Save tasks using browser LocalStorage.
+- **Responsive Design:** Access the application on mobile devices, tablets, and desktops.
+- **Clear Completed Tasks:** Remove completed tasks from the list.
 
-> Features such as task editing, priorities, due dates, search, and dark mode are planned upgrades and should only be marked as complete after implementation and testing.
+*Note: Task editing, priorities, due dates, search, and dark mode are planned enhancements and are not included in the current feature list until implemented and tested.*
 
 ## Technologies Used
 
-- HTML5 — page structure
-- CSS3 — styling and responsive layout
-- JavaScript (ES6+) — task management and interactivity
-- LocalStorage — saving tasks in the browser
-- Git and GitHub — version control and project hosting
+- **HTML5—Structures** the web page.
+- **CSS3—Provides** styling and responsive layouts.
+- **JavaScript (ES6+)—Implements** task management and interactivity.
+- **LocalStorage—Stores** tasks in the browser.
+- **Git and GitHub—Support** version control and project hosting.
 
 ## Project Structure
 
@@ -43,108 +43,116 @@ student-task-manager/
 
 ### Prerequisites
 
-- A modern web browser
-- A code editor such as Visual Studio Code
-- Git (optional, for version control)
+- A modern web browser, such as Chrome or Firefox.
+- A code editor, such as Visual Studio Code.
+- Git, if you want to clone and manage the repository from the command line.
 
 ### Installation
 
-**1. Clone the repository**
-
-Replace `YOUR_USERNAME` with your GitHub username.
+**1. Clone the repository.**
 
 ```bash
 git clone https://github.com/ManteshB2006/student-task-manager.git
 ```
 
-**2. Open the project folder**
+**2. Navigate to the project directory.**
 
 ```bash
 cd student-task-manager
 ```
 
-**3. Run the application**
+**3. Run the application.**
 
-Open `index.html` in your browser, or use the Live Server extension in Visual Studio Code.
+Open `index.html` directly in your browser, or use the Live Server extension in Visual Studio Code.
 
 No backend server or database is required for the current version.
 
 ## How to Use
 
 1. Open the application in your browser.
-2. Enter a task in the task form.
+2. Enter a task in the task input field.
 3. Add the task to your list.
-4. Mark it as completed when you finish it.
-5. Use the filters to view tasks by status.
+4. Mark the task as completed when you finish it.
+5. Use the available filters to view tasks by status.
 6. Delete individual tasks or clear completed tasks.
-7. Refresh the browser to verify that saved tasks remain available.
+7. Refresh the browser to verify that your tasks remain saved.
 
-## Data Storage
+## Data Storage and Limitations
 
-The application uses browser LocalStorage to save tasks.
+The application uses the browser's LocalStorage to save tasks between page visits.
 
-**Limitations:**
-- Data is stored locally in the current browser.
-- Tasks are not automatically synchronized between devices.
-- Clearing the browser's site data may remove saved tasks.
-- The current version does not provide user accounts or cloud backups.
+Current limitations include:
 
-Do not use this version to store sensitive personal information.
+- Tasks are stored in the browser on the current device.
+- Tasks do not automatically synchronize across devices.
+- Clearing the browser's site data may delete saved tasks.
+- The application does not currently support user accounts or cloud backups.
+
+Avoid storing sensitive personal information in this application.
 
 ## Testing Checklist
 
+Use this checklist to verify the application before publishing it.
+
 - [ ] Add a task with a valid title.
-- [ ] Check how empty input is handled.
+- [ ] Verify that empty task input is handled correctly.
 - [ ] Mark a task as completed and pending.
-- [ ] Delete a task.
-- [ ] Test each task filter.
+- [ ] Delete an individual task.
+- [ ] Test all available task filters.
 - [ ] Verify that task statistics update correctly.
-- [ ] Refresh the browser and check saved tasks.
+- [ ] Refresh the page and check whether tasks remain saved.
 - [ ] Clear completed tasks and verify the result.
-- [ ] Test the layout on mobile and desktop.
-- [ ] Check the browser console for errors.
+- [ ] Test the layout on mobile and desktop screens.
+- [ ] Check the browser console for JavaScript errors.
 
-## Future Improvements
+## Future Enhancements
 
-- Edit existing tasks
-- Add task priorities: Low, Medium, and High
-- Set due dates and identify overdue tasks
-- Search tasks by title or subject
-- Sort tasks by due date and priority
-- Add dark mode
-- Improve keyboard accessibility
-- Add automated tests
-- Explore backend storage and synchronization in a future version
+The following features may be added in future versions:
+
+- Edit existing tasks.
+- Assign priorities: Low, Medium, and High.
+- Set due dates and identify overdue tasks.
+- Search tasks by title or subject.
+- Sort tasks by due date and priority.
+- Add light and dark themes.
+- Improve keyboard navigation and accessibility.
+- Introduce automated tests.
+- Explore backend storage and cross-device synchronization.
 
 ## Learning Outcomes
 
-Through this project, I aim to develop practical skills in:
+This project provides practical experience with:
 
-- Structuring web pages with HTML
-- Building responsive layouts with CSS
-- Manipulating the DOM using JavaScript
-- Handling user events and form validation
-- Working with arrays and objects
-- Persisting application data with LocalStorage
-- Using Git and GitHub to manage a project
+- Structuring web pages using HTML.
+- Creating responsive layouts with CSS.
+- Manipulating the DOM using JavaScript.
+- Handling user events and validating form input.
+- Working with JavaScript arrays and objects.
+- Persisting application data using LocalStorage.
+- Managing source code with Git and GitHub.
 
 ## Deployment
 
-The project can be hosted using GitHub Pages after the files have been uploaded to a GitHub repository.
+You can publish this front-end application using GitHub Pages.
 
-1. Open your repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Select the deployment source and the appropriate branch.
-4. Save the settings and wait for deployment.
-5. Open the published URL and test the application.
+1. Push the project files to your GitHub repository.
+2. Open the repository on GitHub.
+3. Navigate to **Settings → Pages**.
+4. Choose the appropriate deployment source and branch.
+5. Save the configuration.
+6. Once deployment completes, open the published URL and test the application.
 
 ## Author
 
 **Mantesh B.**
 
-- GitHub: https://github.com/ManteshB2006
-- LinkedIn: https://linkedin.com/in/mantesh-b-40513b428/
+- **GitHub:** [https://github.com/ManteshB2006](https://github.com/ManteshB2006)
+- **LinkedIn:** [https://linkedin.com/in/mantesh-b-40513b428/](https://linkedin.com/in/mantesh-b-40513b428/)
 
 ## License
 
-This project is intended for learning and portfolio development. A license has not yet been specified. Consider adding an MIT License if you want others to reuse and modify your code under its terms.
+No license has been specified yet. If you want others to use, modify, and distribute this project under the MIT License, add a `LICENSE` file containing the MIT License terms.
+
+---
+
+*Built as a learning project to develop practical front-end web development skills.*
