@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple student task manager to organize daily study tasks.">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <p class="eyebrow">STUDENT WORKSPACE</p>
+      <h1>My Tasks</h1>
+      <p class="subtitle">A little progress every day adds up.</p>
+    </header>
+
+    <section class="summary" aria-label="Task summary">
+      <div class="summary-card">
+        <span class="summary-label">Total tasks</span>
+        <strong id="total-count">0</strong>
+      </div>
+      <div class="summary-card">
+        <span class="summary-label">Pending</span>
+        <strong id="pending-count">0</strong>
+      </div>
+      <div class="summary-card">
+        <span class="summary-label">Completed</span>
+        <strong id="completed-count">0</strong>
+      </div>
+    </section>
+
+    <section class="task-panel" aria-labelledby="task-heading">
+      <h2 id="form-heading">Add a task</h2>
+
+      <form id="task-form" novalidate>
+        <div class="form-grid">
+          <div class="form-field form-field-wide">
+            <label for="task-input">Task title</label>
+            <input
+              id="task-input"
+              type="text"
+              placeholder="e.g. Practice JavaScript for 30 minutes"
+              maxlength="120"
+              autocomplete="off"
+              required
+            >
+          </div>
+          <div class="form-field">
+            <label for="task-subject">Subject <span>(optional)</span></label>
+            <input
+              id="task-subject"
+              type="text"
+              placeholder="e.g. Biology"
+              maxlength="80"
+            >
+          </div>
+          <div class="form-field">
+            <label for="task-priority">Priority</label>
+            <select id="task-priority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="task-due-date">Due date <span>(optional)</span></label>
+            <input id="task-due-date" type="date">
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="task-description">Description <span>(optional)</span></label>
+            <textarea
+              id="task-description"
+              rows="3"
+              maxlength="500"
+              placeholder="Add any helpful details"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button id="submit-task" class="primary-button" type="submit">Add task</button>
+          <button id="cancel-edit" class="secondary-button" type="button" hidden>
+            Cancel edit
+          </button>
+        </div>
+      </form>
+
+      <p id="form-message" class="form-message" aria-live="polite"></p>
+
+      <div class="task-toolbar">
+        <h2>Your list</h2>
+        <label class="visually-hidden" for="task-filter">Filter tasks by status</label>
+        <select id="task-filter" aria-label="Filter tasks by status">
+          <option value="all">All tasks</option>
+          <option value="pending">Pending</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+
+      <p id="empty-message" class="empty-message">
+        No tasks yet. Add your first task above.
+      </p>
+
+      <footer class="panel-footer">
+        <span id="progress-text">0 of 0 completed</span>
+        <button id="clear-completed" class="text-button" type="button">
+          Clear completed
+        </button>
+      </footer>
+    </section>
+
+    <p class="app-note">Your tasks are saved in this browser.</p>
+  </main>
+</body>
+</html>
